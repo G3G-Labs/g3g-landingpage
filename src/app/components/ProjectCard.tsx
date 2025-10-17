@@ -86,7 +86,7 @@ export function ProjectCarousel({ projects }: ProjectCarouselProps) {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className="aspect-[16/9] sm:aspect-[20/20] md:aspect-[30/9] relative w-full">
+      <div className="aspect-[16/24] sm:aspect-[20/20] md:aspect-[30/9] relative w-full">
         <AnimatePresence initial={false} custom={direction} mode="popLayout">
           <motion.div
             key={currentIndex}
@@ -172,7 +172,7 @@ export function ProjectCarousel({ projects }: ProjectCarouselProps) {
         )}
 
         {projectPairs.length > 1 && (
-          <div className="absolute bottom-3 sm:bottom-5 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2 bg-[#2a2a2a]/60 backdrop-blur-md px-3 py-2 rounded-full border border-white/10">
+          <div className="absolute bottom-61 sm:bottom-5 md:bottom-2 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2 bg-[#2a2a2a]/60 backdrop-blur-md px-3 py-2 rounded-full border border-white/10">
             {projectPairs.map((_, index) => (
               <motion.button
                 key={index}

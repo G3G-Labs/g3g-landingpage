@@ -15,13 +15,14 @@ export default function Hero() {
           controls={false}
           muted
           playsInline
+          className="h-[91vh] sm:h-[91vh] md:h-[92vh]"
           style={{
             position: "absolute",
             top: 73,
             left: 0,
             filter: "brightness(0.5)",
             width: "100vw",
-            height: "92vh",
+
             objectFit: "cover",
           }}
         />
